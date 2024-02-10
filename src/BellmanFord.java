@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class BellmanFord{
     static int[] bellman_ford(int V, ArrayList<ArrayList<Integer>> edges, int S) {
         int[] dist = new int[V];
@@ -47,7 +50,7 @@ public class tUf {
 
 
 
-        int[] dist = Solution.bellman_ford(V, edges, S);
+        int[] dist = BellmanFord.bellman_ford(V, edges, S);
         for (int i = 0; i < V; i++) {
             System.out.print(dist[i] + " ");
         }
